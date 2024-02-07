@@ -3,16 +3,15 @@
 #include <stdio.h>
 char check_int(int n)
 {
-    int i, a;
-    if (a == 0)
+    if (n == 0)
     {
         return 'z';
     }
-    if (a > 0)
+    if (n > 0)
     {
         return 'p';
     }
-    if (a < 0)
+    if (n < 0)
     {
         return 'n';
     }
