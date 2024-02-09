@@ -4,10 +4,11 @@
 int check_factor(int x)
 {
     int i = 2, count = 0;
-    while (i <= x)
+    while (i < x)
     {
         if (x % i == 0)
             count++;
+        i++;
     }
     return count;
 }
@@ -16,7 +17,8 @@ int check_prime(int n)
     if (n == 1)
         return 0;
     int w = sqrt(n);
-    return check_factor(w) == 1;
+    printf("%d\n", check_factor(w));
+    return (check_factor(w) == 0);
 }
 int main()
 {
